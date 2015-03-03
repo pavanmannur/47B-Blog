@@ -1,0 +1,43 @@
+@media mq-mobile
+  #main
+    width: 100%
+  #main-nav
+    float: right
+  #header
+    margin: 0px
+    #search-form-wrap
+    #nav-rss-link
+      display: none
+    #main-nav-toggle
+      top: 0px
+    .headsociallink
+      margin-top: 30px 0 0 -15px
+  #mobile-nav
+    display: block
+    position: relative
+    width: 100%
+    max-height: 1000px
+    overflow: hidden
+    background: color-mobile-nav-background
+    transition: max-height 0.2s linear
+    &.off
+      max-height: 0px
+    #search-form-wrap-mobile
+      display: block
+      margin: 15px 20px
+      .search-form-input
+        width: 90%
+  .mobile-nav-link
+    display: block
+    color: color-header
+    text-align: center
+    text-decoration: none
+    padding: 15px 20px
+    font-weight: 300
+    &:hover
+      background-color: #f47321
+      color:#EFEFEF
+  #sidebar
+    display: none
+  #footer
+    margin-top: 0px

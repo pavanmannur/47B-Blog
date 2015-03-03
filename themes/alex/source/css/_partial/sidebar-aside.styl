@@ -1,0 +1,30 @@
+#sidebar
+  text-align: right
+  border-right: 1px solid #CDCDCD
+  @media mq-normal
+    column(sidebar-column)
+    padding-right: 35px
+    box-sizing: border-box
+
+.widget-wrap
+  margin: 0 0 15px 0
+  border-bottom: 1px solid #CDCDCD
+  padding-bottom: 15px
+
+.widget-title
+  @extend $block-caption
+
+.widget
+  color: color-default
+  padding: 0px
+  a
+    color: #626363
+    text-decoration: none
+    &:hover
+      color: #f47321none
+    &.current
+      color: #f47321
+  ul, ol, dl
+    ul, ol, dl
+      margin-left: 15px
+      list-style: disc

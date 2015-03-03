@@ -1,0 +1,29 @@
+<header id="header">
+  <div id="header-outer" class="outer">
+    <a href="<%- url_for() %>" class="logo"><%= config.title %></a>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+          <% for (var i in theme.menu){
+              %>
+                <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+              <%
+
+          } %>
+      </nav>
+
+
+      <nav id="sub-nav">
+          <div id="search-form-wrap">
+              <%- search_form({button: '&#xF002;'}) %>
+          </div>
+          <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+          <div class="headsociallink">
+              <a href="https://www.facebook.com/47Billion" target="_blank" class="article-share-facebook"></a>
+              <a href="https://twitter.com/47billion" target="_blank" class="article-share-twitter"></a>
+              <a href="https://plus.google.com/102587598432325227811"  class="article-share-google"></a>
+          </div>
+      </nav>
+    </div>
+  </div>
+</header>
